@@ -1,5 +1,5 @@
-def mysum(*args):
+def mysum(*nums):
     ans = 0
-    for n in args:
+    for n in nums:
         ans += n
     return ans
