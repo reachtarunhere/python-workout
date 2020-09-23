@@ -1,1 +1,2 @@
-
+def avg(nums):
+    return sum(nums)/len(nums)
