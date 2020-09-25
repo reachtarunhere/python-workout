@@ -8,11 +8,11 @@ def guessing_game():
     for i in range(3):
         guess = int(input('Guess a number: '))
         if guess > chosen_number:
-            print('Too High')
+            print(f'Your guess of {guess} is too high!')
         elif guess < chosen_number:
-            print('Too Low')
+            print(f'Your guess of {guess} is too low!')
         else:
-            print('Just Right')
+            print(f'Right!  The answer is {guess}')
             break
 
 
