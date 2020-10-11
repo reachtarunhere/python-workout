@@ -1,5 +1,8 @@
 def ubbi_dubbi(word):
     # u first becaue other charcters will introduce u's that we shouldn't replace
-    for vowel in 'uaeio':
-        word = word.replace(vowel, f'ub{vowel}')
-    return word
+    new_word = ''
+    for c in word:
+        if c in 'aeiou':
+            new_word += 'ub'
+        new_word += c
+    return new_word
